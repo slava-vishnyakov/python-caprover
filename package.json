@@ -1,5 +1,5 @@
 {
   "scripts": {
-    "deploy-builder": "EDITME_caprover deploy -n SERVER -a APP -b BRANCH"
+    "deploy": "EDITME_caprover deploy -n SERVER -a APP -b BRANCH"
   }
 }
