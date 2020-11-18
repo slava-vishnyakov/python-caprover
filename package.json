@@ -1,5 +1,6 @@
 {
   "scripts": {
-    "deploy": "EDITME_caprover deploy -n SERVER -a APP -b BRANCH"
+    "deploy": "EDITME_caprover deploy -n SERVER -a APP -b BRANCH",
+    "serve": "venv/bin/waitress-serve --port=${PORT:-5000} --url-scheme=http --threads=25 --asyncore-use-poll web:app"
   }
 }
