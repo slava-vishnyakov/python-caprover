@@ -1,5 +1,5 @@
 ```sh
-export PROJECT=mydomain.com
+echo -n "Directory name: "; read PROJECT
 git clone git@github.com:slava-vishnyakov/python-caprover $PROJECT
 cd $PROJECT
 git checkout orator
