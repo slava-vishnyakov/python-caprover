@@ -4,7 +4,7 @@ git clone git@github.com:slava-vishnyakov/python-caprover $PROJECT
 cd $PROJECT
 git checkout orator
 rm -rf .git
-python3 randomize_ports.py
-rm randomize_ports.py
+python3 initialize.py
+rm initialize.py
 git init
 ```
