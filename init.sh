@@ -12,5 +12,4 @@ rm initialize.py init.sh
 python3 -m venv venv
 . venv/bin/activate
 pip install -r requirements.txt
-npm run start-db &
-npm run serve
+echo "Done! Run:  (npm run start-db &); npm run serve"
