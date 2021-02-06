@@ -1,3 +1,7 @@
 waitress
 flask
 python-dotenv
+orator
+orator_cache
+psycopg2
+redis

@@ -1,0 +1,47 @@
+version: '2'
+
+services:
+
+  postgres:
+    # psql --user=webapp --port=5525 --password --host=0.0.0.0
+    # DATABASE_URL=postgres://webapp:secret@localhost:5525/webapp?sslmode=disable
+    image: postgres:13.1
+    ports:
+      - "5525:5432"
+    # volumes:
+    #   - "./db/:/var/lib/postgresql/data"
+    environment:
+      POSTGRES_PASSWORD: secret
+      POSTGRES_USER: webapp
+      POSTGRES_DB: webapp
+
+#  postgres_test:
+#    # psql --user=webapp --port=5526 --password --host=0.0.0.0
+#    # DATABASE_URL=postgres://webapp:secret@localhost:5526/webapp?sslmode=disable
+#    image: postgres:13.1
+#    ports:
+#      - "5526:5432"
+#    environment:
+#      POSTGRES_PASSWORD: secret
+#      POSTGRES_USER: webapp
+#      POSTGRES_DB: webapp
+
+  redis:
+    image: redis:5
+    ports:
+      - "6913:6379"
+
+#  redis_test:
+#    image: redis:5
+#    ports:
+#      - "6914:6379"
+
+#  elastic:
+#    image: docker.elastic.co/elasticsearch/elasticsearch:7.10.1
+#    ports:
+#      - "9483:9200"
+#
+#  elastic_test:
+#    image: docker.elastic.co/elasticsearch/elasticsearch:7.10.1
+#    ports:
+#      - "9484:9200"
