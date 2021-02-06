@@ -6,5 +6,7 @@ git checkout orator
 rm -rf .git
 python3 initialize.py
 rm initialize.py
+python -m venv venv
+. venv/bin/activate
 pip install -r requirements.txt
 ```
