@@ -31,6 +31,7 @@ def init_db():
                 'redis': {
                     'driver': 'redis',
                     'host': result.hostname or 'localhost',
+                    'password': result.password,
                     'port': result.port or 6379,
                     'db': int(result.path[1:]) or 0
                 }
