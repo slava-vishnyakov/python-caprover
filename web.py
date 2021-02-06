@@ -5,7 +5,7 @@ from flask import Flask
 from db import init_db
 
 db, cache = init_db()
-app = Flask(__name__)
+app = Flask(__name__, static_folder='static')
 
 
 # Example:
