@@ -6,5 +6,5 @@ git checkout orator
 rm -rf .git
 python3 initialize.py
 rm initialize.py
-git init
+pip install -r requirements.txt
 ```
